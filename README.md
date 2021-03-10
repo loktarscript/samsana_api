@@ -19,14 +19,14 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | updated_at     |   Date    |
 
 ## Metodos Rest
-    |   Método  |   URL                                                 |
-    |:::::::::::|:::::::::::::::::::::::::::::::::::::::::::::::::::::::|
-    | GET       | http://localhost:3000/usuarios/                       |
-    | GET       | http://localhost:3000/usuarios/:id                    |
-    | POST      | http://localhost:3000/usuarios/registro               |
-    | PATCH     | http://localhost:3000/usuarios/:id                    |
-    | DELETE    | http://localhost:3000/usuarios/:id                    |
-    | POST      | http://localhost:3000/usuarios/change_password/:id    |
+    |   Método  |   URL                                                      |
+    |:::::::::::|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+    | GET       | http://localhost:3000/usuarios/                            |
+    | GET       | http://localhost:3000/usuarios/:id                         |
+    | POST      | http://localhost:3000/usuarios/registro                    |
+    | PATCH     | http://localhost:3000/usuarios/:id                         |
+    | DELETE    | http://localhost:3000/usuarios/:id                         |
+    | POST      | http://localhost:3000/usuarios/change_password/pass/:id    |
 
 ## instalación
     1. Clonar el proyecto
