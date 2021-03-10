@@ -73,6 +73,7 @@ const deleteData = async(id) => {
 
 
 
+
 module.exports = {
     getAll: getAll,
     getOne: getOne,
