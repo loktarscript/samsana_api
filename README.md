@@ -9,7 +9,7 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
 
 ## Usuario
     |   Data         |   Tipo    |
-    |   :-:          |   :-:     |
+    |::::::::::::::::|:::::::::::|
     | nombres        |   String  |
     | apellidos      |   String  |
     | email          |   String  |
@@ -18,10 +18,19 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | created_at     |   Date    |
     | updated_at     |   Date    |
 
-## endpoints
+## Metodos Rest
+    |   Método  |   URL                                                 |
+    |:::::::::::|:::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+    | GET       | http://localhost:3000/usuarios/                       |
+    | GET       | http://localhost:3000/usuarios/:id                    |
+    | POST      | http://localhost:3000/usuarios/registro               |
+    | PATCH     | http://localhost:3000/usuarios/:id                    |
+    | DELETE    | http://localhost:3000/usuarios/:id                    |
+    | POST      | http://localhost:3000/usuarios/change_password/:id    |
 
 ## instalación
     1. Clonar el proyecto
     2. Acceder mediante terminal al directorio raiz del proyecto
     3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
-    4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 4500.
+    4. Ejecutar el comando npm i -D para instalar dependencias de desarrollo (opcional).
+    4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 3000.
