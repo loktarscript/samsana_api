@@ -7,7 +7,7 @@ El proceso de autenticación es generado a través de tokens, en el cual la info
 
 Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acceder un usuario que previamente haya iniciado sesión y posea un token válido.
 
-# Usuario
+## Usuario
     |   Data         |   Tipo    |
     |   :-:          |   :-:     |
     | nombres        |   String  |
@@ -18,10 +18,17 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | created_at     |   Date    |
     | updated_at     |   Date    |
 
-# endpoints
+## endpoints
 
-# instalación
+## instalación
     1. Clonar el proyecto
     2. Acceder mediante terminal al directorio raiz del proyecto
     3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
     4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 4500.
+
+        ```
+git clone https://github.com/loktarscript/samsana_api.git
+cd samsana api
+npm i
+npm run dev
+```
