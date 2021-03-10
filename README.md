@@ -28,9 +28,9 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | DELETE    | http://localhost:3000/usuarios/:id                         |
     | POST      | http://localhost:3000/usuarios/change_password/pass/:id    |
 
-## instalación
+## Instalación
     1. Clonar el proyecto
     2. Acceder mediante terminal al directorio raiz del proyecto
     3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
     4. Ejecutar el comando npm i -D para instalar dependencias de desarrollo (opcional).
-    4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 3000.
+    5. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 3000.
