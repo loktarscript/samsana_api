@@ -25,10 +25,3 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     2. Acceder mediante terminal al directorio raiz del proyecto
     3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
     4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 4500.
-
-        ```
-git clone https://github.com/loktarscript/samsana_api.git
-cd samsana api
-npm i
-npm run dev
-```
