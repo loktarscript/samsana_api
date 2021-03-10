@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var usuariosRouter = require('./routes/usuarios');
 var authRouter = require('./routes/auth');
+var areaResponsableRouter = require('./routes/diccionarios/area_responsable');
 var app = express();
 
 // view engine setup
@@ -24,7 +25,7 @@ db(config.database.URL);
 //Rutas
 app.use('/usuarios', usuariosRouter);
 app.use('/auth', authRouter);
-
+app.use('/area_responsable', areaResponsableRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
