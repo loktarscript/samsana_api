@@ -20,3 +20,8 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
 
 # endpoints
 
+# instalación
+    1. Clonar el proyecto
+    2. Acceder mediante terminal al directorio raiz del proyecto
+    3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
+    4. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 4500.
