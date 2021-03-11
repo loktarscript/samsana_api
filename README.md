@@ -1,4 +1,4 @@
-# samsana_api
+# Samsana API
 Samsana es una herramienta en línea para la administración de tareas de un proyecto, el seguimiento de errores e incidencias y para la gestión operativa de proyectos.
 
 Hasta el momento llevamos desarrolladas las operaciones básicas del usuario (CRUD) y la autenticación.
@@ -57,6 +57,9 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | POST      | http://localhost:3000/area_responsable/agregar             |
     | PATCH     | http://localhost:3000/area_responsable/:id                 |
     | DELETE    | http://localhost:3000/area_responsable/:id                 |
+
+### Imagen Roles
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
    

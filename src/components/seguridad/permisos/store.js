@@ -25,7 +25,6 @@ const getOne = async(id) => {
     }
 }
 
-
 const addData = async(newData) => {
     try{
         const dataSaved = new Model(newData);
@@ -42,11 +41,11 @@ const updateData = async(newData) => {
         })
         if(foundedData){
             foundedData.nombre = newData.nombre,
-            foundedData.activo = newData.activo
+            foundedData.accesos = newData.accesos
             const resultado = await foundedData.save();
             return resultado;
         }else{
-            return {message: "Area responsable no encontrada!, no se actualizó la información."}
+            return {message: "Grupo no encontrado!, no se actualizó la información."}
         }
         
     }catch (error) {
@@ -60,16 +59,13 @@ const deleteData = async(id) => {
             data : await Model.findByIdAndDelete({
             _id: id
         }),
-        mensaje : `Usuario eliminado!`,
+        mensaje : `Grupo eliminado!`,
     }
         return mjs;
     }catch (error) {
         console.error('[Error: ]', error);
     } 
 };
-
-
-
 
 module.exports = {
     getAll: getAll,
