@@ -8,6 +8,8 @@ var logger = require('morgan');
 var usuariosRouter = require('./routes/usuarios');
 var authRouter = require('./routes/auth');
 var areaResponsableRouter = require('./routes/roles/area_responsable');
+var categoriaTicketRouter = require('./routes/diccionarios/categoria_ticket');
+
 var app = express();
 
 // view engine setup
@@ -26,6 +28,7 @@ db(config.database.URL);
 app.use('/usuarios', usuariosRouter);
 app.use('/auth', authRouter);
 app.use('/area_responsable', areaResponsableRouter);
+app.use('/categoria_ticket', categoriaTicketRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

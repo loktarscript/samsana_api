@@ -38,7 +38,8 @@ const saveUser = (body) => {
                 apellidos: body.apellidos,
                 email: body.email,
                 password: encryptPass(body.password),
-                profile_image: body.profile_image
+                profile_image: body.profile_image,
+                area_responsable: body.area_responsable
             };
             store.save(newData);
             resolve(
@@ -58,7 +59,8 @@ const updateData = (id, body) => {
         apellidos: body.apellidos,
         email: body.email,
         password: body.password,
-        profile_image: body.profile_image
+        profile_image: body.profile_image,
+        area_responsable: body.area_responsable
     };
     // console.log(newData)
     return new Promise(async (resolve, reject) => {
@@ -100,7 +102,8 @@ const changePassword = (oldPass, newPass, confirmNewPass, id) =>{
                         apellidos: userData.apellidos,
                         email: userData.email,
                         password: passToSave,
-                        profile_image: userData.profile_image
+                        profile_image: userData.profile_image,
+                        area_responsable: userData.area_responsable
                     };
                     const result = await store.update(newData);
                     resolve({message: "Pass actualizada correctamente!",result});
