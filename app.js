@@ -7,7 +7,7 @@ var logger = require('morgan');
 
 var usuariosRouter = require('./routes/usuarios');
 var authRouter = require('./routes/auth');
-var areaResponsableRouter = require('./routes/diccionarios/area_responsable');
+var areaResponsableRouter = require('./routes/roles/area_responsable');
 var app = express();
 
 // view engine setup

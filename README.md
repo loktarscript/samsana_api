@@ -6,6 +6,12 @@ Hasta el momento llevamos desarrolladas las operaciones básicas del usuario (CR
 El proceso de autenticación es generado a través de tokens, en el cual la información del usuario es codificada una vez validadas las credenciales de este.
 
 Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acceder un usuario que previamente haya iniciado sesión y posea un token válido.
+# Instalación
+    1. Clonar el proyecto
+    2. Acceder mediante terminal al directorio raiz del proyecto
+    3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
+    4. Ejecutar el comando npm i -D para instalar dependencias de desarrollo (opcional).
+    5. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 3000.
 
 ## Usuario
     |   Data         |   Tipo    |
@@ -18,7 +24,7 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | created_at     |   Date    |
     | updated_at     |   Date    |
 
-## Metodos Rest
+### Metodos Rest
     |   Método  |   URL                                                      |
     |:::::::::::|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
     | GET       | http://localhost:3000/usuarios/                            |
@@ -28,9 +34,12 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | DELETE    | http://localhost:3000/usuarios/:id                         |
     | POST      | http://localhost:3000/usuarios/change_password/pass/:id    |
 
-## Instalación
-    1. Clonar el proyecto
-    2. Acceder mediante terminal al directorio raiz del proyecto
-    3. Ejecutar el comando npm i (para instalar las dependencias del proyecto).
-    4. Ejecutar el comando npm i -D para instalar dependencias de desarrollo (opcional).
-    5. Con el comando npm run dev podemos probar el servidor que por defecto tomará el puerto 3000.
+
+
+## Auth
+### Metodos Rest
+    |   Método  |   URL                                                      |
+    |:::::::::::|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+    | POST      | http://localhost:3000/auth/login                           |
+    | POST      | http://localhost:3000/auth/forgot                          |
+   
