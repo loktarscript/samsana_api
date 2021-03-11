@@ -59,7 +59,7 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
     | DELETE    | http://localhost:3000/area_responsable/:id                 |
 
 ### Imagen Roles
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/loktarscript/samsana_api/tree/main/readme_files/roles_ y_ticket.PNG?raw=true)
 
 
    
