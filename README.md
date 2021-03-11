@@ -37,9 +37,26 @@ Mediante el uso de Middlewares se protegen las rutas, a las que solo puede acced
 
 
 ## Auth
-### Metodos Rest
+### Metodos
     |   Método  |   URL                                                      |
     |:::::::::::|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
     | POST      | http://localhost:3000/auth/login                           |
     | POST      | http://localhost:3000/auth/forgot                          |
+
+## Área Responsable
+    |   Data         |   Tipo    |
+    |::::::::::::::::|:::::::::::|
+    | nombre         |   String  |
+    | activo         |   String  |
+
+### Metodos Rest
+    |   Método  |   URL                                                      |
+    |:::::::::::|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+    | GET       | http://localhost:3000/area_responsable/                    |
+    | GET       | http://localhost:3000/area_responsable/:id                 |
+    | POST      | http://localhost:3000/area_responsable/agregar             |
+    | PATCH     | http://localhost:3000/area_responsable/:id                 |
+    | DELETE    | http://localhost:3000/area_responsable/:id                 |
+
+
    
