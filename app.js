@@ -11,6 +11,7 @@ var areaResponsableRouter = require('./routes/seguridad/area_responsable');
 var categoriaTicketRouter = require('./routes/diccionarios/categoria_ticket');
 var permisosRouter = require('./routes/seguridad/permisos');
 var grupoRouter = require('./routes/seguridad/grupo');
+var rolUsuarioRouter = require('./routes/seguridad/permisos');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/area_responsable', areaResponsableRouter);
 app.use('/categoria_ticket', categoriaTicketRouter);
 app.use('/permisos', permisosRouter);
 app.use('/grupo', grupoRouter);
+app.use('/rol_usuario', rolUsuarioRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
