@@ -12,6 +12,7 @@ var categoriaTicketRouter = require('./routes/diccionarios/categoria_ticket');
 var permisosRouter = require('./routes/seguridad/permisos');
 var grupoRouter = require('./routes/seguridad/grupo');
 var rolUsuarioRouter = require('./routes/seguridad/permisos');
+var reportesRouter = require('./routes/reportes/userReport');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use('/categoria_ticket', categoriaTicketRouter);
 app.use('/permisos', permisosRouter);
 app.use('/grupo', grupoRouter);
 app.use('/rol_usuario', rolUsuarioRouter)
+app.use('/reportes', reportesRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

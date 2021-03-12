@@ -7,7 +7,7 @@ const usuarioSchema = new Schema({
     email : {type: String, required: true},
     password : {type: String, required: true},
     profile_image  : {type: String, required: true},
-    area_responsable: {type: Schema.Types.ObjectId, ref: 'Area_Responsable'},
+    rol_usuario: {type: Schema.Types.ObjectId, ref: 'Rol_Usuario'},
     created_at : { type : Date, default: Date.now() },
     updated_at : { type : Date, default: Date.now()}
 });
