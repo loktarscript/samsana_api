@@ -41,7 +41,7 @@ const updateData = async(newData) => {
         })
         if(foundedData){
             foundedData.nombre = newData.nombre,
-            foundedData.area_responsable = newData.acarea_responsabletivo
+            foundedData.area_responsable = newData.area_responsable
             const resultado = await foundedData.save();
             return resultado;
         }else{
